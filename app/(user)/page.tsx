@@ -43,7 +43,6 @@ async function Home({}: Props) {
   return (
     <>
       <div>
-        {/* Blog List */}
         <BlogList posts={posts}/>
       </div>
     </>

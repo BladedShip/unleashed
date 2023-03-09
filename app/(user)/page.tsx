@@ -15,6 +15,8 @@ const query = groq`
   } | order(publishedAt desc)
 `;
 
+export const revalidate = 600;
+
 type Props = {};
 
 async function Home({}: Props) {

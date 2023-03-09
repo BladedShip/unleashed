@@ -22,10 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} font-sans`}>
-      <body className="max-w-7xl mx-auto">
-        <Header />
-        <Banner />
-        {children}
+      <body>
+        <div className="max-w-7xl mx-auto">
+          <Header />
+          <Banner />
+          {children}
+        </div>
+        <div className="h-10 bg-[#303030] flex items-center justify-center">Made with 💕 by Adithyan Jayakumar</div>
       </body>
     </html>
   );

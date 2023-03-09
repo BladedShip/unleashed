@@ -7,7 +7,7 @@ function Banner({}: Props) {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-bold px-10 py-5 mb-10">
       <div>
-        <h1 className="text-7xl">Thoughts Unleashed</h1>
+        <h1 className=" text-5xl md:text-7xl">Thoughts Unleashed</h1>
         <h2 className="mt-5 font-medium">
           A journey through my{" "}
           <span className="underline decoration-[#dbbadd] decoration-2 font-bold">

@@ -6,4 +6,7 @@
     body{
         @apply bg-[#2c2c2c] text-[#fcfcfc] 
     }
+    p{
+        @apply text-justify leading-7 text-lg mb-8
+    }
 }

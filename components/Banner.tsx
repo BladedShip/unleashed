@@ -9,7 +9,14 @@ function Banner({}: Props) {
       <div>
         <h1 className="text-7xl">Thoughts Unleashed</h1>
         <h2 className="mt-5 font-medium">
-          A journey through my <span className="underline decoration-[#dbbadd] decoration-2 font-bold">thoughts</span> and <span className="underline font-bold decoration-[#dbbadd] decoration-2">ideas</span>
+          A journey through my{" "}
+          <span className="underline decoration-[#dbbadd] decoration-2 font-bold">
+            thoughts
+          </span>{" "}
+          and{" "}
+          <span className="underline font-bold decoration-[#dbbadd] decoration-2">
+            ideas
+          </span>
         </h2>
       </div>
       <p className="mt-5 md:mt-2 text-[#fcfcfc]/50 max-w-sm">

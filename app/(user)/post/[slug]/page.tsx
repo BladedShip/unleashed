@@ -60,7 +60,7 @@ async function Post({ params: { slug } }: Props) {
               <div className="flex flex-col md:flex-row justify-between gap-y-5">
                 <div>
                   <h1 className="text-4xl font-bold">{post.title}</h1>
-                  <p>
+                  <p className="mb-0">
                     {new Date(post._createdAt).toLocaleDateString("en-US", {
                       day: "numeric",
                       month: "long",
@@ -88,7 +88,7 @@ async function Post({ params: { slug } }: Props) {
                   {post.categories.map((category) => (
                     <p
                       key={category._id}
-                      className="bg-[#2c2c2c] text-[#dbbadd] px-3 py-1 rounded-full text-sm font-semibold mt-4"
+                      className="bg-[#2c2c2c] text-[#dbbadd] px-3 py-1 rounded-full text-sm font-semibold mt-4 mb-0"
                     >
                       {category.title}
                     </p>

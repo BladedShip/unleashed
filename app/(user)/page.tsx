@@ -26,7 +26,7 @@ async function Home({}: Props) {
         <PreviewSuspense
           fallback={
             <div role="status">
-              <p className="text-center text-lg animate-pulse text-[#dbbadd]">
+              <p className="text-center text-lg animate-pulse text-[#dbbadd] mb-0">
                 Loading Preview...
               </p>
             </div>

@@ -29,8 +29,8 @@ function BlogList({ posts }: Props) {
                   />
                   <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-[#fcfcfc] p-5 flex justify-between">
                     <div>
-                      <p className="font-bold">{post.title}</p>
-                      <p>
+                      <p className="font-bold mb-0">{post.title}</p>
+                      <p className="mb-0">
                         {new Date(post._createdAt).toLocaleDateString("en-US", {
                           day: "numeric",
                           month: "long",
@@ -41,7 +41,7 @@ function BlogList({ posts }: Props) {
                     <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
                       {post.categories.map((category) => (
                         <div className="bg-[#dbbadd] text-center text-[#2c2c2c] px-3 py-1 rounded-full text-sm font-semibold" key={category._id}>
-                          <p>{category.title}</p>
+                          <p className="mb-0">{category.title}</p>
                         </div>
                       ))}
                     </div>
@@ -49,12 +49,12 @@ function BlogList({ posts }: Props) {
                 </div>
 
                 <div className="mt-5 flex-1">
-                  <p className="underline text-lg font-bold">{post.title}</p>
-                  <p className="text-white/50 line-clamp-2">
+                  <p className="underline text-lg font-bold mb-0">{post.title}</p>
+                  <p className="text-white/50 line-clamp-2 mb-0">
                     {post.description}
                   </p>
                 </div>
-                <p className="mt-5 font-bold flex items-center group-hover:underline">
+                <p className="mt-5 font-bold flex items-center group-hover:underline mb-0">
                   Read Post <ArrowUpRightIcon className="ml-2 h-4 w-4" />
                 </p>
               </div>

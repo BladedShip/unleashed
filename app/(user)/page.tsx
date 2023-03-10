@@ -16,7 +16,7 @@ const query = groq`
 `;
 
 //SSG CODE : ACTIVATE IF USERS INCREASE
-export const revalidate = 600;
+// export const revalidate = 3600;
 
 type Props = {};
 

@@ -6,7 +6,7 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold  px-10 py-5">
+    <header className="flex items-center justify-between space-x-2 font-bold px-10 py-5 line">
       <div>
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -24,9 +24,9 @@ function Header({}: Props) {
           href="https://github.com/BladedShip"
           target="_blank"
           rel="noreferrer"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900/30 text-[#dbbadd] flex items-center rounded-full hover:bg-[#dbbadd] hover:text-gray-900 transition"
+          className="px-5 py-3 text-sm md:text-base bg-gray-900/30 text-[#dbbadd] flex items-center rounded-full hover:bg-[#dbbadd] hover:text-gray-900 transition duration-200"
         >
-          Check out my other projects
+          More by me
         </Link>
       </div>
     </header>

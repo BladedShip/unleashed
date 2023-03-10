@@ -29,8 +29,8 @@ function BlogList({ posts }: Props) {
                   />
                   <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-[#fcfcfc] p-5 flex justify-between">
                     <div>
-                      <p className="font-bold mb-0">{post.title}</p>
-                      <p className="mb-0">
+                      <p className="font-bold mb-0 text-left">{post.title}</p>
+                      <p className="mb-0 text-left">
                         {new Date(post._createdAt).toLocaleDateString("en-US", {
                           day: "numeric",
                           month: "long",
@@ -41,7 +41,7 @@ function BlogList({ posts }: Props) {
                     <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
                       {post.categories.map((category) => (
                         <div className="bg-[#dbbadd] text-center text-[#2c2c2c] px-3 py-1 rounded-full text-sm font-semibold" key={category._id}>
-                          <p className="mb-0">{category.title}</p>
+                          <p className="mb-0 text-center line-clamp-1">{category.title}</p>
                         </div>
                       ))}
                     </div>

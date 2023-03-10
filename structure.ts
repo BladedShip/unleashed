@@ -11,6 +11,7 @@ export const getDefaultDocumentNode: DefaultDocumentNodeResolver = ( S,{ schemaT
                 reload:{
                     button:true
                 },
+                loader:true,
                 attributes:{},
             }).title("Preview"),
         ]);

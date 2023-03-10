@@ -15,24 +15,24 @@ type Props = {
 
 //SSG CODE : ACTIVATE IF USERS INCREASE
 
-// export const revalidate = 600;
+export const revalidate = 600;
 
-// export async function generateStaticParams(){
-//     const query = groq`
-//         *[_type == "post"] {
-//             slug,
-//         }
-//     `;
+export async function generateStaticParams(){
+    const query = groq`
+        *[_type == "post"] {
+            slug,
+        }
+    `;
 
-//     const slugs:Post[] = await client.fetch(query);
-//     const slugRoutes = slugs.map((slug)=>slug.slug.current);
+    const slugs:Post[] = await client.fetch(query);
+    const slugRoutes = slugs.map((slug)=>slug.slug.current);
 
-//     return slugRoutes.map(slug=>(
-//         {
-//             slug,
-//         }
-//     ));
-// }
+    return slugRoutes.map(slug=>(
+        {
+            slug,
+        }
+    ));
+}
 
 
 async function Post({ params: { slug } }: Props) {

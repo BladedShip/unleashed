@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Unleashed",
-  description: "Unleash your thoughts",
+  description: "A damn good blogging site I made using Next.js and Sanity",
 };
 
 export default function RootLayout({

@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,9 +14,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Unleashed",
   description: "A damn good blogging site I made using Next.js and Sanity",
-  icons:{
-    icon:"/favicon.png"
-  }
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +32,17 @@ export default function RootLayout({
           <Banner />
           {children}
         </div>
-        <div className="h-10 bg-[#303030] flex items-center justify-center">Made with 💕 by Adithyan Jayakumar</div>
+        <div className="h-10 bg-[#303030] flex items-center justify-center">
+          Made with 💕 by {" "}
+          <Link
+            href="https://www.adithyan.co.in"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="underline"
+          >
+            Adithyan Jayakumar
+          </Link>
+        </div>
       </body>
     </html>
   );

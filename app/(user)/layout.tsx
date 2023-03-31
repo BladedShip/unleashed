@@ -13,6 +13,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Unleashed",
   description: "Unleash your thoughts",
+  icons:{
+    icon:"/favicon.png"
+  }
 };
 
 export default function RootLayout({

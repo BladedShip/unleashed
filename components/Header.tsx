@@ -21,7 +21,7 @@ function Header({}: Props) {
       </div>
       <div>
         <Link
-          href="https://github.com/BladedShip"
+          href="https://adithyan.tech"
           target="_blank"
           rel="noreferrer"
           className="px-5 py-3 text-sm md:text-base bg-gray-900/30 text-[#dbbadd] flex items-center rounded-full hover:bg-[#dbbadd] hover:text-gray-900 transition duration-200"

@@ -11,8 +11,8 @@ const poppins = Poppins({
 export const metadata = {
   title: "Unleashed",
   description: "Unleash your thoughts",
-  icons:{
-    icon:"/favicon.png",
+  icons: {
+    icon: "/favicon.png",
   }
 };
 

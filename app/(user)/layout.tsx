@@ -16,7 +16,7 @@ export const metadata = {
   description: "A damn good blogging site I made using Next.js and Sanity",
   icons: {
     icon: "/favicon.png",
-  },
+  }
 };
 
 export default function RootLayout({
